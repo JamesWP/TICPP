@@ -42,5 +42,8 @@ int main(int argc, char* argv[])
   cout << "complex size:" << sizeof(complex) << endl; // 24
   cout << "complex no method size:" << sizeof(complexNoMethod) << endl; // 24
   cout << "empty size:" << sizeof(empty) << endl; // 1
+  // "To ensure that the addresses of two different objects will be different. 
+  // For the same reason, "new" always returns pointers to distinct objects."
+  // - Stroustrup: see http://www.stroustrup.com/bs_faq2.html#sizeof-empty to explain the above
   
 }
