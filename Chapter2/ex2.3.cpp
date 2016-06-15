@@ -15,6 +15,12 @@ int main(int argc, char* argv[])
   
   file.open(argv[1]);
   
+  if(!file.good())
+  {
+    cout << "Error opening file " << argv[1] << endl;
+    return 1;
+  }
+  
   string word;
   int numWords = 0;
   while(file>>word) numWords++;
